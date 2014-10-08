@@ -122,6 +122,7 @@ PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/lib/libXt9core.so:system/lib/libXt9core.so
 
 # Add Custom fonts
+PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/fonts/DroidSans.ttf:system/fonts/DroidSans.ttf \
     vendor/cm/prebuilt/common/fonts/DroidSans-Bold.ttf:system/fonts/DroidSans-Bold.ttf \
     vendor/cm/prebuilt/common/fonts/DroidSansKorean.ttf:system/fonts/DroidSansKorean.ttf \
