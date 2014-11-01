@@ -34,6 +34,20 @@ PRODUCT_COPY_FILES += \
     vendor/$(VENDOR)/prebuilt/bin/backuptool.functions:system/bin/backuptool.functions \
     vendor/$(VENDOR)/prebuilt/bin/50-backupScript.sh:system/addon.d/50-backupScript.sh
 
+# Add korean keypad
+PRODUCT_COPY_FILES += \
+    vendor/$(VENDOR)/prebuilt/apk/AxT9IME.apk:system/app/AxT9IME.apk \
+    vendor/$(VENDOR)/prebuilt/lib/libDHWR.so:system/lib/libDHWR.so \
+    vendor/$(VENDOR)/prebuilt/lib/libDWP.so:system/lib/libDWP.so \
+    vendor/$(VENDOR)/prebuilt/lib/libXt9core.so:system/lib/libXt9core.so
+
+# Add Custom fonts
+PRODUCT_COPY_FILES += \
+    vendor/$(VENDOR)/prebuilt/fonts/DroidSans.ttf:system/fonts/DroidSans.ttf \
+    vendor/$(VENDOR)/prebuilt/fonts/DroidSans-Bold.ttf:system/fonts/DroidSans-Bold.ttf \
+    vendor/$(VENDOR)/prebuilt/fonts/DroidSansKorean.ttf:system/fonts/DroidSansKorean.ttf \
+    vendor/$(VENDOR)/prebuilt/fonts/DroidSansKorean-Bold.ttf:system/fonts/DroidSansKorean-Bold.ttf
+
 # SU Support
 SUPERUSER_EMBEDDED := true
 
