@@ -75,9 +75,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.android.dateformat=yyyy-MM-dd \
     ro.com.android.dataroaming=false
 
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.build.selinux=1
-
 ifneq ($(TARGET_BUILD_VARIANT),eng)
 # Enable ADB authentication
 ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=0
@@ -104,10 +101,6 @@ PRODUCT_COPY_FILES += \
 # userinit support
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/etc/init.d/90userinit:system/etc/init.d/90userinit
-
-# SELinux filesystem labels
-PRODUCT_COPY_FILES += \
-    vendor/cm/prebuilt/common/etc/init.d/50selinuxrelabel:system/etc/init.d/50selinuxrelabel
 
 # CM-specific init file
 PRODUCT_COPY_FILES += \
