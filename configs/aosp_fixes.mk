@@ -19,7 +19,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.url.legal.android_privacy=http://www.google.com/intl/%s/mobile/android/basic/privacy.html \
     ro.com.android.wifi-watchlist=GoogleGuest \
     ro.setupwizard.enterprise_mode=1 \
-    ro.com.android.dateformat=MM-dd-yyyy
+    ro.com.android.dateformat=yyyy-MM-dd
 
 # Override old AOSP defaults, we use (new) Google stock sounds
 PRODUCT_PROPERTY_OVERRIDES += \
