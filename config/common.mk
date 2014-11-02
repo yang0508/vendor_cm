@@ -152,8 +152,7 @@ PRODUCT_PACKAGES += \
     audio_effects.conf \
     Apollo \
     LockClock \
-    CMAccount \
-    WhisperPush
+    CMAccount
 
 # CM Hardware Abstraction Framework
 PRODUCT_PACKAGES += \
