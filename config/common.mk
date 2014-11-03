@@ -128,6 +128,20 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/etc/mkshrc:system/etc/mkshrc
 
+# Add korean keypad
+PRODUCT_COPY_FILES += \
+    vendor/cm/prebuilt/common/app/AxT9IME.apk:system/app/AxT9IME.apk \
+    vendor/cm/prebuilt/common/lib/libDHWR.so:system/lib/libDHWR.so \
+    vendor/cm/prebuilt/common/lib/libDWP.so:system/lib/libDWP.so \
+    vendor/cm/prebuilt/common/lib/libXt9core.so:system/lib/libXt9core.so
+
+# Add Custom fonts
+PRODUCT_COPY_FILES += \
+    vendor/cm/prebuilt/common/fonts/DroidSans.ttf:system/fonts/DroidSans.ttf \
+    vendor/cm/prebuilt/common/fonts/DroidSans-Bold.ttf:system/fonts/DroidSans-Bold.ttf \
+    vendor/cm/prebuilt/common/fonts/DroidSansKorean.ttf:system/fonts/DroidSansKorean.ttf \
+    vendor/cm/prebuilt/common/fonts/DroidSansKorean-Bold.ttf:system/fonts/DroidSansKorean-Bold.ttf
+
 # T-Mobile theme engine
 include vendor/cm/config/themes_common.mk
 
